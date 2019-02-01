@@ -6,13 +6,13 @@ from restaurant.models import Category, Customer, Item
 # Register your models here.
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['name', 'description', 'slug', 'type']
+    list_display = ['name', 'description', 'type']
     prepopulated_fields = {'slug': ('name',)}
 
 
 @admin.register(Customer)
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'slug')
+    list_display = ('name',)
     search_fields = ('name', 'date')
 
 
