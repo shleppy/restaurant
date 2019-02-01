@@ -17,6 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    # Home site url
+    path('', include('customersite.urls', namespace='site')),
+
+    # Admin url
     path('admin/', admin.site.urls),
+
+    # Management url
     path('management/', include('restaurant.urls')),
 ]

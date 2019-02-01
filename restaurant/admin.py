@@ -1,8 +1,22 @@
 from django.contrib import admin
 
-from . import models
+from restaurant.models import Category, Customer, Item
+
 
 # Register your models here.
-admin.site.register(models.Category)
-admin.site.register(models.Customer)
-admin.site.register(models.Item)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description', 'slug', 'type']
+    prepopulated_fields = {'slug': ('name',)}
+
+
+@admin.register(Customer)
+class CustomerAdmin(admin.ModelAdmin):
+    list_display = ('name', 'slug')
+    search_fields = ('name', 'date')
+
+
+@admin.register(Item)
+class ItemAdmin(admin.ModelAdmin):
+    list_display = ['name', 'price', 'description',
+                    'category', 'slug']
