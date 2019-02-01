@@ -2,7 +2,7 @@
 Restaurant application based on Django web framework
 
 ## General Information
-This is a medium-sized personal project that I'm using to learn several frameworks and languages. This README file will naturally expand as the project grows. [The Project Structure](https://github.com/shleppy/restaurant#Project Structure) should hint at the general layout of the project and will eventually show how the individual parts are set up.
+This is a medium-sized personal project that I'm using to learn several frameworks and languages. This README file will naturally expand as the project grows. [The Project Structure](https://github.com/shleppy/restaurant#project-structure) should hint at the general layout of the project and will eventually show how the individual parts are set up.
 
 I'm expecting to get experience in the following (unordered):
 * Python3
