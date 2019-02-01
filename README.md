@@ -1,4 +1,4 @@
-# restaurant
+# Restaurant
 Restaurant application based on Django web framework
 
 ## General Information
@@ -23,3 +23,9 @@ The project will contain several sub-projects and is meant to be expandable.
 * Management system
 * General Website
 * Ordering system for customers
+
+### Management System
+
+### General Website
+
+### Ordering System
